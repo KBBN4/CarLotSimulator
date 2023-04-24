@@ -32,6 +32,7 @@ namespace CarLotSimulator
             Car nextCar = new Car() { Year = 2025, Make = "Lambo", Model = "Aventador", EngineNoise = " Pretty Loud", HonkNoise = " Not Annoying", IsDriveable = true };
 
             extraCar.Cars.Add(nextCar);
+
             nextCar.MakeEngineNoise(nextCar.EngineNoise);
             nextCar.MakeHonkNoise(nextCar.HonkNoise);
             Console.WriteLine();
@@ -71,6 +72,14 @@ namespace CarLotSimulator
                 Console.WriteLine($"Year :{Car.Year} Make:{Car.Make} Model:{Car.Model}");
             }
 
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            // Here is where i am calling the cars increment 
+            Console.WriteLine( CarLot.numberOfCars );
 
 
             //*************BONUS X 2*************//
